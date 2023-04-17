@@ -1,5 +1,4 @@
 import cv2
-import numpy as np
 import vlc
 import time
 
@@ -42,7 +41,7 @@ class Multifunctional() :
         if key == "music" :
             music = vlc.MediaPlayer("Shape Of My Heart .mp3")
             music.play()
-            time.sleep(15)
+            # time.sleep(15)
 
         elif key == "movie" :
             poster = cv2.imread("poster.jpeg")
